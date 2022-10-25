@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/oficina.css"/>
+    <title>Registro Oficinas</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="../assets/logo.png"
+            alt="logo"
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div class="btn-menu">
+          <label for="btn-menu">
+            <img src="../assets/menu.png" alt="close" width="30px" height="30px"
+          /></label>
+        </div>
+      </div>
+    </header>
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="../inicio.html">Inicio</a>   
+          <a href="./administrador.html">Administración</a>
+          <a href="./usuario.html">Usuarios</a>
+          <a href="./destinatario.html">Destinatario</a>
+          <a href="./remitente.html">Remitente</a>
+          <a href="./destinos.html">Destinos</a>
+          <a href="./remitente.html">Radicado</a>
+        </nav>
+        <label for="btn-menu">X</label>
+      </div>
+    </div>
+    <section class="form-register">
+      <h4>Formulario Registro</h4>
+      <select class="controls" type="select" id="type-id">
+        <option disabled selected>Tipo de documento</option>
+        <option>C.C</option>
+        <option>C.E</option>
+        <option>T.I</option>
+      </select>
+      <input
+        class="controls"
+        type="number"
+        name="id"
+        id="user-id"
+        placeholder="Número de identificación"
+      />
+      <input
+        class="controls"
+        type="text"
+        name="nombres"
+        id="nombres"
+        placeholder="Ingrese su Nombre"
+      />
+      <input
+        class="controls"
+        type="text"
+        name="apellidos"
+        id="apellidos"
+        placeholder="Ingrese su Apellido"
+      />
+      <input class="controls" type="date" name="bdaytime" id="bdaydate" />
+      <input
+        class="controls"
+        type="number"
+        name="phone"
+        id="phone"
+        placeholder="Número de Celular"
+      />
+      <input
+        class="controls"
+        type="text"
+        name="cargo"
+        id="cargo"
+        placeholder="Cargo"
+      />
+      <input
+        class="controls"
+        type="text"
+        name="adress"
+        id="adress"
+        placeholder="Dirección"
+      />
+      <input
+        class="controls"
+        type="Text"
+        name="city"
+        id="city"
+        placeholder="Ciudad/Municipio"
+      />
+      <input
+        class="controls"
+        type="email"
+        name="correo"
+        id="correo"
+        placeholder="Ingrese su Correo"
+      />
+      <input
+        class="controls"
+        type="text"
+        name="idOfi"
+        id="idOfi"
+        placeholder="Código de oficina"
+      />
+      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+      <input class="botons" type="submit" value="Crear" />
+      <input class="botons" type="submit" value="Modificar" />
+      <input class="botons" type="submit" value="Desactivar" />
+      <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    </section>
+  </body>
+</html>

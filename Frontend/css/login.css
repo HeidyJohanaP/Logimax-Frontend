@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+    background: #e1eec3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #fffc00,
+      #e1eec3
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #fffc00,
+      #e1eec3
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: auto;
+  }
+  
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    padding-top: 2%;
+  }
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#central {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 250%;
+    color:#0c0c0c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#login {
+    width: 500px;
+    height: auto;
+    background: #ffffff;
+    padding: 40px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: black;
+    box-shadow: 1px 1px 2px 3px #f9ffc1; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    top: center;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #1b262c;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+
+    box-shadow: 1px 1px 2px 3px #1b262c; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color:#0c0c0c;
+
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: black;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color:#e1eec3;
+    
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #fffc00;
+    color:black;
+}
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color:black;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #0f4c75;
+}
+
+/*Menù lateral*/
+#btn-menu {
+    display: none;
+  }
+  .container-menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+  }
+  #btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+  }
+  .cont-menu nav {
+    transform: translateY(15%);
+  }
+  .cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+  }
+  .cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+  }
+  .cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  /*Fin de Menù lateral*/
+  
+  .btn-menu label {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  /*Footer*/
+
+.contenedor-footer {
+    margin-top: 600px;
+    
+}
+
+.content-foot {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-foot h4 {
+    border: none;
+}
+
+.content-foo p {
+    color: #d4a373;
+    border-bottom: 1px solid #d4a373;
+    padding-bottom: 100px;
+}
+
+.titulo-final {
+    font-size: 20px;
+}
+

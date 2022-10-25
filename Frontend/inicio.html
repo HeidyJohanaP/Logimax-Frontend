@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Muestra de un formulario de acceso en HTML y CSS">
+    <meta name="keywords" content="Formulario Acceso, Formulario de LogIn">
+    <link rel="stylesheet" href="./css/login.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <title>Formulario de Acceso</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="./assets/logo.png"
+            alt="logo"
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div class="btn-menu">
+          <label for="btn-menu">
+            <img src="./assets/menu.png" alt="close" width="30px" height="30px"
+          /></label>
+        </div>
+      </div>
+    </header>
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="./pages/administrador.html">Administración</a>
+          <a href="./pages/usuario.html">Usuarios</a>
+          <a href="./pages/destinatario.html">Destinatario</a>
+          <a href="./pages/remitente.html">Remitente</a>
+          <a href="./pages/destinos.html">Destinos</a>
+          <a href="./pages/radicado.html">Radicado</a>
+          <a href="./pages/oficinas.html">Gestión Oficinas</a>   
+          <a href="./pages/consulta.html">Estado de Envio</a>   
+          <a href="#">Log out</a> 
+        </nav>
+        <label for="btn-menu">X</label>
+      </div>
+    </div>
+    <div id="contenedor">
+      <div id="central">
+          <div id="login">
+              <div class="titulo">
+                  Bienvenido
+              </div>
+              <form id="loginform">
+                  <input type="text" name="usuario" placeholder="Usuario" required>
+                  
+                  <input type="password" placeholder="Contraseña" name="password" required>
+                  
+                  <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+              </form>
+              <div class="pie-form">
+                  <a href="#">¿Perdiste tu contraseña?</a>
+                  <a href="#">¿No tienes Cuenta? Registrate</a>
+              </div>
+          </div>
+      </div>
+      <footer id="Contact" class="contenedor-footer">
+        <div class="content-foot">
+            <h4>Phone</h4>
+            <p>(+57)9239429</p>
+        </div>
+        <div class="content-foot">
+            <h4>Email</h4>
+            <p>logimax@gmail.com</p>
+        </div>
+        <div class="content-foot">
+            <h4>Location</h4>
+            <p>Bogotá D.C,Colombia.</p>
+        </div>
+        <h2 class="titulo-final"> Copyright &copy;2022|Heidy Johana P.</h2>
+      </footer>
+    </body>  
+</html>
+  
