@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -39,6 +39,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    flex-direction: column;
 }
 
 #central {
@@ -55,40 +56,33 @@ body {
 
 #login {
     width: 500px;
-    height: auto;
+    height: center;
     background: #ffffff;
     padding: 40px;
     margin: auto;
     border-radius: 4px;
-    font-family: "calibri";
     color: black;
-    box-shadow: 1px 1px 2px 3px #f9ffc1; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    top: center;
+    box-shadow: 1px 1px 2px 3px #f9ffc1; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 
 #login input {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
     color: #1b262c;
-    
     display: block;
     width: 100%;
     height: 40px;
-    
     margin-bottom: 10px;
     padding: 5px 5px 5px 10px;
-    
     border: none;
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
-
     box-shadow: 1px 1px 2px 3px #1b262c; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #login input::placeholder {
     font-family: 'Overpass', sans-serif;
     color:#0c0c0c;
-
 }
 
 #login button {
@@ -98,13 +92,10 @@ body {
     width: 100%;
     height: 40px;
     border: none;
-    
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
-    
-    background-color:#e1eec3;
-    
+    background-color:#cfe46e;
     margin-top: 10px;
 }
 
@@ -195,17 +186,20 @@ body {
   /*Footer*/
 
 .contenedor-footer {
-    margin-top: 600px;
-    
+   display: flex;
+   align-items: center;
+   flex-direction: column;
 }
 
 .content-foot {
     margin-bottom: 20px;
     text-align: center;
+    display: inline-block;
 }
 
 .content-foot h4 {
     border: none;
+    text-align: center;
 }
 
 .content-foo p {

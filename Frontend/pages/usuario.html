@@ -29,7 +29,7 @@
     <div class="container-menu">
       <div class="cont-menu">
         <nav>
-          <a href="../inicio.html">Inicio</a>   
+          <a href="../loguin.html">Inicio</a>   
           <a href="./administrador.html">Administración</a>
           <a href="./destinatario.html">Destinatario</a>
           <a href="./remitente.html">Remitente</a>
@@ -47,6 +47,7 @@
         <option>C.C</option>
         <option>C.E</option>
         <option>T.I</option>
+        <option>P.A</option>
       </select>
       <input
         class="controls"
@@ -69,7 +70,8 @@
         id="apellidos"
         placeholder="Ingrese su Apellido"
       />
-      <input class="controls" type="date" name="bdaytime" id="bdaydate" />
+      <label style="font-size: 15px">Fecha de nacimiento</label>
+      <input  class="controls" type="date" name="bdaytime" id="bdaydate" />
       <input
         class="controls"
         type="number"
@@ -112,11 +114,11 @@
         id="idOfi"
         placeholder="Código de oficina"
       />
-      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-      <input class="botons" type="submit" value="Crear" />
-      <input class="botons" type="submit" value="Modificar" />
-      <input class="botons" type="submit" value="Desactivar" />
-      <p><a href="#">¿Ya tengo Cuenta?</a></p>
+      <input type="checkbox" id="cbox2" value="second_checkbox" style="font-size: 11px"> Estoy de acuerdo con <label for="cbox2" style="font-size: 11px"><a href="#">Terminos y Condiciones</a></label>
+    
+      <input class="botons" type="submit" value="Registrar" />
+      
+      <p><a href="../loguin.html">¿Ya tengo Cuenta?</a></p>
     </section>
   </body>
 </html>

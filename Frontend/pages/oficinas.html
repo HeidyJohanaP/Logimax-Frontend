@@ -36,60 +36,26 @@
           <a href="./remitente.html">Remitente</a>
           <a href="./destinos.html">Destinos</a>
           <a href="./remitente.html">Radicado</a>
+          <a href="../loguin.html">Log out</a> 
         </nav>
         <label for="btn-menu">X</label>
       </div>
     </div>
     <section class="form-register">
-      <h4>Formulario Registro</h4>
-      <select class="controls" type="select" id="type-id">
-        <option disabled selected>Tipo de documento</option>
-        <option>C.C</option>
-        <option>C.E</option>
-        <option>T.I</option>
-      </select>
-      <input
-        class="controls"
-        type="number"
-        name="id"
-        id="user-id"
-        placeholder="Número de identificación"
-      />
+      <h4>Registro Oficinas</h4>
       <input
         class="controls"
         type="text"
-        name="nombres"
-        id="nombres"
-        placeholder="Ingrese su Nombre"
+        name="idOfi"
+        id="idOfi"
+        placeholder="Código de oficina"
       />
       <input
-        class="controls"
-        type="text"
-        name="apellidos"
-        id="apellidos"
-        placeholder="Ingrese su Apellido"
-      />
-      <input class="controls" type="date" name="bdaytime" id="bdaydate" />
-      <input
-        class="controls"
-        type="number"
-        name="phone"
-        id="phone"
-        placeholder="Número de Celular"
-      />
-      <input
-        class="controls"
-        type="text"
-        name="cargo"
-        id="cargo"
-        placeholder="Cargo"
-      />
-      <input
-        class="controls"
-        type="text"
-        name="adress"
-        id="adress"
-        placeholder="Dirección"
+      class="controls"
+      type="text"
+      name="adress"
+      id="adress"
+      placeholder="Dirección"
       />
       <input
         class="controls"
@@ -100,17 +66,32 @@
       />
       <input
         class="controls"
+        type="text"
+        name="apellidos"
+        id="apellidos"
+        placeholder="Localidad"
+      />
+      <input class="controls" type="date" name="bdaytime" id="bdaydate" />
+      <input
+        class="controls"
+        type="number"
+        name="phone"
+        id="phone"
+        placeholder="Número de Celular"
+      />
+      <input
+      class="controls"
+      type="number"
+      name="phone"
+      id="phone"
+      placeholder="Número de Telefono"
+    />
+      <input
+        class="controls"
         type="email"
         name="correo"
         id="correo"
         placeholder="Ingrese su Correo"
-      />
-      <input
-        class="controls"
-        type="text"
-        name="idOfi"
-        id="idOfi"
-        placeholder="Código de oficina"
       />
       <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
       <input class="botons" type="submit" value="Crear" />
